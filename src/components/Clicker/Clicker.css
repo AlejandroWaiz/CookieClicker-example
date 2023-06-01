@@ -1,0 +1,47 @@
+.clicker {
+    position: relative;
+    display: block;
+    width: 90vw;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    border: 0.25rem solid gray;
+    border-radius: 1rem 0;
+  }
+  
+
+  @media (min-width: 751px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .game {
+      margin: 3rem 0 0 0;
+    }
+  
+    .clicker {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 45rem;
+      padding: 0 2rem;
+    }
+  
+    .buy {
+      width: 12rem;
+      margin: 1rem 0;
+    }
+  
+    .sell {
+      position: absolute;
+      left: 94%;
+      top: 50%;
+      padding: 0.2rem 0.51rem;
+      border-color: red;
+      border-radius: 2rem;
+      outline: none;
+    }
+  }
