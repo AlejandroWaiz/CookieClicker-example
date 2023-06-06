@@ -4,9 +4,12 @@ import ClicksReducer from '../../reducers/ClicksReducer'
 import Clicker from '../../components/Clicker/Clicker';
 import Autoclicker from '../../components/AutoClickers/AutoClickers';
 
-import { initialState } from './InitialState';
+import  getInitialState  from './GetInitialState';
 
-const ClickerView = () => {
+const ClickerView = ({user}) => {
+
+  const initialState = getInitialState({user})
+
   const [state, dispatch] = useReducer(ClicksReducer, initialState);
   const callback = useRef();
 
